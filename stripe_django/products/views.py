@@ -23,7 +23,7 @@ class CreateCheckoutSessionView(View):
             checkout_session = stripe.checkout.Session.create(
                 line_items=[
                     {
-                        'price': 'price_1M5cwSKxvPpdM2FHaJmKgxMf',
+                        'price': 'price_1M5qi1KxvPpdM2FHcOAY97Qg',
                         'quantity': 1,
                     },
                 ],
