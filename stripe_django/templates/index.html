@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <p>Товары в магазине</p>
+        <hr>
+        {% for item in items %}
+                <h3>{{ item.name }}</h3>
+                <h5>{{ item.price }} $</h5>
+
+                <form action="{% url 'item' item.id %}" method="GET">
+                        <button>Detail</button>
+                </form>
+        {% endfor %}
+{% endblock content %}
